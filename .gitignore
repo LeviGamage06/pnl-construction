@@ -1,0 +1,35 @@
+# Credentials and local deployment state
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler/
+**/.wrangler/
+*.pem
+*.key
+
+# Generated local files and previews
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+qa-dist/
+**/qa-dist/
+.openai/
+**/.openai/
+.DS_Store
+*.log
+
+# Company data and exports must never be committed
+PNL-backup-*.json
+PNL-device-*.json
+PNL-before-cloud-backup.json
+PNL-ledger-*.ndjson
+PNL-ledger-*.verified.json
+pnl-offsite-backups/
+**/pnl-offsite-backups/
+*.sqlite
+*.sqlite3
+*.db
+*.csv
